@@ -313,6 +313,134 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px;
+}
+.product-container, .category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+.product-card, .category-card {
+  flex: 1 1 280px;
+  max-width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.product-card:hover, .category-card:hover {
+  transform: translateY(-10px);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #2980b9;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #2980b9;
+  color: white;
+}
+
+button, .btn-buy, .btn-view-more {
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #25d366;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover, .btn-buy:hover, .btn-view-more:hover {
+  background-color: #1ebe57;
+  box-shadow: 0 8px 25px rgba(30, 190, 87, 0.7);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 40px;
+}
+
+/* Form styling */
+.contact-form-section {
+  max-width: 500px;
+  margin: 20px auto 40px auto;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.contact-form-section form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+  border-color: #2980b9;
+  outline: none;
+  box-shadow: 0 0 10px #2980b9aa;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  .product-card, .category-card {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
 }
 
 
